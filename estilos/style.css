@@ -5,6 +5,7 @@
     Verde: #49a09d
     Lilás: #5f2c82
 */
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
@@ -18,15 +19,10 @@ body, html {
     height: 100vh;
 }
 
-h1 {
-    text-align: center;
-}
-
 main {
     position: relative;
     width:100vw;
     height: 100vh;
-    /*background-image: linear-gradient(to top, #49a09d, #5f2c82);*/
 }
 
 section#login {
@@ -35,23 +31,26 @@ section#login {
     left: 50%;
     transform: translate(-50%, -50%);
     overflow: hidden;
+
     background-color: white;
     width: 250px;
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.455);
+
+    transition: width 0.3s, height 0.3s;
+    -o-transition-timing-function: ease;
 }
 
 section#login > div#imagem {
     display: block;
-    background: #5f2c82 url(../imagens/metal.jpg) no-repeat;
+    background: #5f2c82 url(../imagens/padrão.jpg) no-repeat;
     height: 200px;
-    background: cover;
+    background-size: cover;
     background-position: left bottom;
 }
 
 section#login > div#formulario {
     display: block;
     padding: 10px;
-    background: white;
 }
